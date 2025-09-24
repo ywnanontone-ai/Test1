@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .profile-card {
+      background: #1a1a1a;
+      padding: 30px 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(200,16,46,0.5);
+      max-width: 380px;
+      width: 90%;
+      border: 2px solid #c8102e; /* Liverpool red */
+    }
+
+    .profile-card .logo {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+
+    .profile-card img.player {
+      width: 220px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      border: 3px solid #c8102e;
+    }
+
+    .profile-card h1 {
+      font-size: 22px;
+      color: #fff;
+      margin: 10px 0;
+    }
+
+    .profile-card p {
+      margin: 6px 0;
+      color: #bbb;
+      font-size: 15px;
+    }
+
+    .profile-card a {
+      display: Circle;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: #c8102e;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .profile-card a:hover {
+      background: #ff2d2d;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 480px) {
+      .profile-card {
+        padding: 20px 15px;
+        max-width: 95%;
+      }
+      .profile-card img.player {
+        width: 100%;
+        height: auto;
+      }
+      .profile-card h1 {
+        font-size: 20px;
+      }
+      .profile-card p {
+        font-size: 14px;
+      }
+      .profile-card a {
+        padding: 8px 14px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <!-- โลโก้ Liverpool -->
+    <img src="1.JPG" alt="Liverpool FC Logo" class="logo">
+
+    <!-- รูป Mohamed Salah -->
+    <img src="2.jpg" alt="Mohamed Salah" class="player">
+
+    <h1>JAME</h1>
+    <p>Club: Basketball Team</p>
+    <p>Email: <a href="mailto:msalah@liverpool.com">msalah@liverpool.com</a></p>
+    <p>"I love football and my fans."</p>
+    <a href="#">Follow Me</a>
+  </div>
+</body>
+</html>
